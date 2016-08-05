@@ -1,6 +1,6 @@
 {
   "name": "enzo-codestyle",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": "git@github.com:EnzoMartin/codestyle.git",
   "description": "Enzo's ESLint configuration",
   "author": "Enzo Martin <enzo.r.martin@gmail.com>",
