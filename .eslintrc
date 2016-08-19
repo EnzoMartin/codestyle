@@ -136,6 +136,9 @@
             "before": true,
             "after": true
           },
+          "return": {
+            "after": true
+          },
           "case": {
             "before": true,
             "after": true
