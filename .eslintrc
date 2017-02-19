@@ -144,6 +144,14 @@
           "case": {
             "before": true,
             "after": true
+          },
+          "const": {
+            "before": false,
+            "after": true
+          },
+          "let": {
+            "before": false,
+            "after": true
           }
         }
       }
