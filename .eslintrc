@@ -156,6 +156,10 @@
           "from": {
             "before": true,
             "after": true
+          },
+          "import": {
+            "before": false,
+            "after": true
           }
         }
       }
