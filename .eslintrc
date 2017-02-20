@@ -152,6 +152,10 @@
           "let": {
             "before": false,
             "after": true
+          },
+          "from": {
+            "before": true,
+            "after": true
           }
         }
       }
