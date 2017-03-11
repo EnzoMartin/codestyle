@@ -5,9 +5,9 @@
   ],
   "rules": {
     "no-extra-parens": [0, "all", {
-      conditionalAssign: true,
-      nestedBinaryExpressions: false,
-      returnAssign: false
+      "conditionalAssign": true,
+      "nestedBinaryExpressions": false,
+      "returnAssign": false
     }],
     "require-jsdoc": 0,
     "valid-jsdoc": 2,
@@ -58,7 +58,7 @@
     "react/self-closing-comp": 2,
     "react/jsx-space-before-closing": [2, "always"],
     "react/sort-comp": [2, {
-      order: [
+      "order": [
         "static-methods",
         "lifecycle",
         "/^on.+$/",
