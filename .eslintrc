@@ -8,7 +8,7 @@
     "class-methods-use-this": 2,
     "comma-dangle": [2, "never"],
     "no-cond-assign": 2,
-    "no-console": 0,
+    "no-console": 1,
     "no-constant-condition": 2,
     "no-debugger": 2,
     "no-dupe-args": 2,
