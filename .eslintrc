@@ -40,8 +40,6 @@
       }
     }],
     "valid-typeof": 2,
-
-
     "accessor-pairs": 2,
     "block-scoped-var": 2,
     "complexity": [ 2, 20 ],
@@ -99,11 +97,7 @@
     "vars-on-top": 0,
     "wrap-iife": [ 2, "outside" ],
     "yoda": 2,
-
-
     "strict": 0,
-
-
     "no-catch-shadow": 2,
     "no-delete-var": 2,
     "no-label-var": 2,
@@ -120,48 +114,10 @@
     "id-length": 0,
     "indent": [2, 2, {"SwitchCase": 1}],
     "key-spacing": [ 0, { "beforeColon": true, "afterColon": true, "align": "colon" } ],
-    "keyword-spacing": [
-      2,
+    "keyword-spacing": [2,
       {
-        "before": false,
-        "after": false,
-        "overrides": {
-          "catch": {
-            "before": true,
-            "after": true
-          },
-          "try": {
-            "before": true,
-            "after": true
-          },
-          "else": {
-            "before": true,
-            "after": true
-          },
-          "return": {
-            "after": true
-          },
-          "case": {
-            "before": true,
-            "after": true
-          },
-          "const": {
-            "before": false,
-            "after": true
-          },
-          "let": {
-            "before": false,
-            "after": true
-          },
-          "from": {
-            "before": true,
-            "after": true
-          },
-          "import": {
-            "before": false,
-            "after": true
-          }
-        }
+        "before": true,
+        "after": true
       }
     ],
     "linebreak-style": 0,
@@ -205,8 +161,6 @@
     "space-unary-ops": [ 2, { "words": true, "nonwords": false } ],
     "spaced-comment": [ 2, "always", { "exceptions": [ "*", "=", "eslint" ], "markers": ["TODO:", "HACK:"] } ],
     "wrap-regex": 2,
-
-
     "callback-return": 0,
     "global-require": 2,
     "handle-callback-err": 2,
@@ -216,8 +170,6 @@
     "no-process-exit": 2,
     "no-restricted-modules": 0,
     "no-sync": 2,
-
-
     "arrow-parens": [2, "always"],
     "no-confusing-arrow": 2,
     "arrow-body-style": [2, "always"],
@@ -246,7 +198,6 @@
     "prefer-template": 2,
     "require-yield": 2
   },
-
 
   "ecmaFeatures": {
     "arrowFunctions": true,
