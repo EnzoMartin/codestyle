@@ -149,11 +149,7 @@
     "semi-spacing": 2,
     "semi": [ 2, "always" ],
     "sort-vars": 0,
-    "space-before-blocks": [2, {
-      "functions": "never",
-      "keywords": "never",
-      "classes":"always"
-    }],
+    "space-before-blocks": [2, "always"],
     "space-before-function-paren": [ 2, { "anonymous": "always", "named": "never" } ],
     "space-in-parens": [ 2, "never" ],
     "space-infix-ops": [ 2, { "int32Hint": false } ],
