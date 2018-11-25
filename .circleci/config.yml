@@ -1,0 +1,66 @@
+version: 2
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:10.12.0
+
+jobs:
+  verify:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+      - run: npm i --no-save
+      - run: npm outdated
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
+
+  canary:
+    <<: *defaults
+    steps:
+    - attach_workspace:
+        at: ~/repo
+    - run:
+        name: Authenticate with NPM
+        command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+    - run:
+        name: Publish package canary version
+        command: npm publish --access public --tag canary
+
+  latest:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Authenticate with NPM
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+      - run:
+          name: Publish package latest version
+          command: npm publish --access public --tag latest
+
+workflows:
+  version: 2
+  publish:
+    jobs:
+      - verify
+      - canary:
+          requires:
+            - verify
+          filters:
+            branches:
+              ignore: master
+      - latest:
+          requires:
+            - verify
+          filters:
+            branches:
+              only: master

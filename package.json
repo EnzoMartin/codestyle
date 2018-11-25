@@ -1,6 +1,6 @@
 {
   "name": "enzo-codestyle",
-  "version": "5.1.0",
+  "version": "6.0.0",
   "repository": "git@github.com:EnzoMartin/codestyle.git",
   "description": "Enzo's ESLint configuration",
   "author": "Enzo Martin <enzo.r.martin@gmail.com>",
@@ -10,11 +10,12 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "babel-eslint": "^8.0.3",
-    "eslint": "^4.13.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-plugin-react": "^7.11.1",
     "estraverse-fb": "^1.3.2"
   },
   "peerDependencies": {
-    "eslint": "^4.13.1"
+    "eslint": "^5.9.0"
   }
 }
