@@ -15,11 +15,11 @@
       "files": ["test/*js", "test/**/*.js", "*.test.js"],
       "rules": {
         "max-nested-callbacks": "off",
-        "global-require": "off",
-        "no-process-env": "off",
-        "no-sync": "off",
+        "node/global-require": "off",
+        "node/no-process-env": "off",
+        "node/no-sync": "off",
         "class-methods-use-this": "off",
-        "handle-callback-err": "off",
+        "node/handle-callback-err": "off",
         "no-unused-expressions": "off",
         "no-unused-vars": "off"
       },
@@ -37,7 +37,7 @@
     {
       "files": ["config.js"],
       "rules": {
-        "no-process-env": "off"
+        "node/no-process-env": "off"
       }
     }
   ],
@@ -100,13 +100,13 @@
     "no-use-before-define": "error",
 
     // "Node.js and CommonJS" Rules
-    "global-require": "error",
-    "handle-callback-err": "error",
-    "no-mixed-requires": "error",
-    "no-new-require": "error",
-    "no-process-env": "error",
-    "no-process-exit": "error",
-    "no-sync": "error",
+    "node/global-require": "error",
+    "node/handle-callback-err": "error",
+    "node/no-mixed-requires": "error",
+    "node/no-new-require": "error",
+    "node/no-process-env": "error",
+    "node/no-process-exit": "error",
+    "node/no-sync": "error",
 
     // "Stylistic" Rules
     "brace-style": "error",
