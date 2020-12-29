@@ -43,7 +43,8 @@
       "files": ["config.js"],
       "rules": {
         "node/no-process-env": "off",
-        "node/no-process-exit": "off"
+        "node/no-process-exit": "off",
+        "no-process-exit": "off"
       }
     }
   ],
