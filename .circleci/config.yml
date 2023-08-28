@@ -57,7 +57,7 @@ workflows:
             - verify
           filters:
             branches:
-              ignore: master
+              only: ^(?!master$).+
       - latest:
           requires:
             - verify
